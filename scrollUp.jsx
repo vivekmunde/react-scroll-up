@@ -120,9 +120,10 @@ export default class ScrollUp extends React.Component {
      */
     render() {
 
+        let cssClass = this.props.className || ScrollUp.defaultProps.cssClass;
         let propStyle = this.props.style;
         let element =
-            <div style={propStyle} onClick={this.handleClick}>
+            <div style={propStyle} className={cssClass} onClick={this.handleClick}>
                 {this.props.children}
             </div>;
 
