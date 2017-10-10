@@ -165,10 +165,11 @@ var ScrollUp = function (_React$Component) {
         key: 'render',
         value: function render() {
 
+            var cssClass = this.props.className || ScrollUp.defaultProps.cssClass;
             var propStyle = this.props.style;
             var element = _react2.default.createElement(
                 'div',
-                { style: propStyle, onClick: this.handleClick },
+                { style: propStyle, className: cssClass, onClick: this.handleClick },
                 this.props.children
             );
 
